@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de dos numeros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caja">
+            <h2>Calculadora</h2>
+                <!--Solicitar numeros-->
+            <p>Numero 1:</p><input placeholder="Ingresa un número" type="number" id="num_1" required>
+            <p>Numero 2:</p><input placeholder="Ingresa un número" type="number" id="num_2" required>
+            <br>
+                <!--Realizar operaciones-->
+            <button type="submit" id="IDsum" onclick="sumar()">+</button>
+            <button type="submit" id="IDres" onclick="restar()">-</button>
+            <button type="submit" id="IDdiv" onclick="dividir()">≑</button>
+            <button type="submit" id="IDmult" onclick="multiplicar()">x</button>
+            <br>
+            <button type="reset" class="bReset">Borrar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

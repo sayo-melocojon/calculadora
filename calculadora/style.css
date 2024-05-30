@@ -1,0 +1,69 @@
+
+    /*Fuentes*/
+@font-face {
+    font-family:'monse' ;
+    src: url("Monse.ttf");
+}
+@font-face {
+    font-family:'quick' ;
+    src: url("quick.ttf");
+}
+    /*Etiquetas*/
+body{
+    background-color: #323232;
+    min-height: 100vh;
+    overflow: hidden;
+}
+h2{
+    color:white;
+    font-family: 'quick';
+}
+input{
+    background-color: #323232;
+    color: white;
+}
+button{
+    background-color: #4e2616;
+    
+    color: white;
+    border-radius: 5%;
+    border: 0;
+    font-family: 'quick';
+}
+p{
+    color: rgb(243, 134, 134);
+    font-family: 'quick';
+}
+    /*Clases*/
+.bReset{
+    background-color: #f51a1a;
+}
+.container{
+    margin: 0;
+    text-align: center;
+}
+.parraDiv{
+        /*Posicionar*/
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+        /*Estilizar*/
+    border-radius: 5%;
+    border: 0;
+    font-family: 'monse';
+}
+    .parrafo{
+        font-size: 100px;
+        text-decoration: dashed;
+        text-decoration-color: #deac66;
+        color: white;
+    }
+    /*Identificadores*/
+    /*Hover's*/
+button:hover{
+    background-color: #deac66;
+    color: white;
+    border-radius: 5%;
+    border: 0;
+    font-family: 'monse';
+}

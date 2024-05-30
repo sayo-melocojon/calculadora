@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/darkly/bootstrap.min.css">
+</head>
+<body>
+    <div class="parraDiv container">
+        <p id="pImprimir" class="parrafo"></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            startConfetti();
+        });
+            //Obtener los datos almacenados.
+        var p_resultado = localStorage.getItem("resultadoJS");
+        var p_num1 = localStorage.getItem("numJS_1");
+        var p_num2 = localStorage.getItem("numJS_2");
+        var p_txt = localStorage.getItem("txtJS");
+            //Imprimir.
+        document.getElementById("pImprimir").innerHTML = 
+            p_num1 + p_txt + p_num2 + " = " + p_resultado;
+    </script>
+    <script src="confetti.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46156385-1', 'cssscript.com');
+        ga('send', 'pageview');
+    </script>
+      
+</body>
+</html>
